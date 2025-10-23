@@ -74,6 +74,11 @@ h1,
   padding: 0.5rem 1rem;
 }
 
+#note button.active {
+  background-color: #959eacff;
+  color: #fff;
+}
+
 #note button:hover {
   background-color: #fb7413ff;
   cursor: pointer;

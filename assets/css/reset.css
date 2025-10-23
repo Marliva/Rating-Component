@@ -52,11 +52,6 @@ table {
     border-spacing: 0;
 }
 
-/* Suppression des outlines par défaut pour l'accessibilité */
-*:focus {
-    outline: 2px solid #0066cc;
-    outline-offset: 2px;
-}
 
 /* Amélioration de la lisibilité sur les écrans haute résolution */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

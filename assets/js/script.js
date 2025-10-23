@@ -30,6 +30,13 @@ let n = 0;
 while (n < numbers.length) {
   const btn = document.createElement("button");
   btn.textContent = numbers[n];
+  btn.addEventListener("click", () => {
+    document
+      .querySelectorAll("button")
+      .forEach((btn) => btn.classList.remove("active"));
+    console.log("active");
+    btn.classList.add("active");
+  });
   note.append(btn);
   n++;
   // console.log(n);
