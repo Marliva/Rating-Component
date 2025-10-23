@@ -1,11 +1,112 @@
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Overpass", sans-serif;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
 
- body {
-    width: 100vw;
-    height: 100vh;
- }
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #121417ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #252d37ff;
+  padding: 1.3rem;
+  border-radius: 1rem;
+}
+
+h1,
+#submit button {
+  color: #fff;
+}
+
+#text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#text p,
+#note button {
+  color: #959eacff;
+  font-size: 0.9rem;
+}
+
+#star {
+  padding: 0.8rem;
+  background-color: #373d46;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#star img {
+  width: 1rem;
+}
+
+#text {
+  margin-top: 1rem;
+}
+
+#text p {
+    margin-top: .5rem;
+}
+
+#note {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+#note button {
+  background-color: #373d46;
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+}
+
+#note button:hover {
+  background-color: #fb7413ff;
+  cursor: pointer;
+  color: #fff;
+}
+
+#submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+#submit button {
+  width: 100%;
+  padding: .7rem 1rem 0.5rem 1rem;
+  background-color: #fb7413ff;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+}
+
+#submit button:hover {
+  background-color: #fff;
+  color: #fb7413ff;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 576px){
+    #app {
+        width: 375px;
+    }
+    
+}
