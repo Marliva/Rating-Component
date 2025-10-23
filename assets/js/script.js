@@ -34,3 +34,11 @@ while (n < numbers.length) {
   n++;
   // console.log(n);
 }
+
+const submit = document.createElement("div");
+submit.id = "submit";
+app.append(submit);
+
+const submitBtn = document.createElement("button");
+submitBtn.textContent = "Submit";
+submit.append(submitBtn);
