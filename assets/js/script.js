@@ -30,6 +30,16 @@ let n = 0;
 while (n < numbers.length) {
   const btn = document.createElement("button");
   btn.textContent = numbers[n];
+  btn.addEventListener("mouseover", () => {
+    console.log("hover");
+    btn.classList.add("hover");
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    console.log("hover");
+    btn.classList.remove("hover");
+  });
+
   btn.addEventListener("click", () => {
     document
       .querySelectorAll("button")
@@ -48,4 +58,17 @@ app.append(submit);
 
 const submitBtn = document.createElement("button");
 submitBtn.textContent = "Submit";
+submitBtn.addEventListener("mouseover", () => {
+  console.log("hover");
+  submitBtn.classList.add("hover");
+});
+
+submitBtn.addEventListener("mouseleave", () => {
+  console.log("hover");
+  submitBtn.classList.remove("hover");
+});
+
+submitBtn.addEventListener("click", () => {
+    
+});
 submit.append(submitBtn);

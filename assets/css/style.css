@@ -74,14 +74,15 @@ h1,
   padding: 0.5rem 1rem;
 }
 
-#note button.active {
-  background-color: #959eacff;
-  color: #fff;
+#note button.hover {
+    background-color: #fb7413ff;
+    cursor: pointer;
+    color: #fff;
+    transition: .6s;
 }
 
-#note button:hover {
-  background-color: #fb7413ff;
-  cursor: pointer;
+#note button.active {
+  background-color: #959eacff;
   color: #fff;
 }
 
@@ -102,10 +103,11 @@ h1,
   font-weight: 500;
 }
 
-#submit button:hover {
+#submit button.hover {
   background-color: #fff;
   color: #fb7413ff;
   cursor: pointer;
+  transition: .6s;
 }
 
 
