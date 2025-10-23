@@ -50,7 +50,6 @@ while (n < numbers.length) {
 
   // On ajotue un événement de mouseleave pour enlever la classe "hover" lorsque l'on retire la souris du bouton
   btn.addEventListener("mouseleave", () => {
-    console.log("hover");
     btn.classList.remove("hover");
   });
 
@@ -59,7 +58,6 @@ while (n < numbers.length) {
     document
       .querySelectorAll("button")
       .forEach((btn) => btn.classList.remove("active"));
-    console.log("active");
     btn.classList.add("active");
   });
   note.append(btn);
@@ -75,12 +73,10 @@ app.append(submit);
 const submitBtn = document.createElement("button");
 submitBtn.textContent = "Submit";
 submitBtn.addEventListener("mouseover", () => {
-  console.log("hover");
   submitBtn.classList.add("hover");
 });
 
 submitBtn.addEventListener("mouseleave", () => {
-  console.log("hover");
   submitBtn.classList.remove("hover");
 });
 
